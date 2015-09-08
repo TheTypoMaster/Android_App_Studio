@@ -1,0 +1,889 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From CameraLibrary:
+* CameraLibrary.iml
+* build.gradle
+* build\
+* build\generated\
+* build\generated\source\
+* build\generated\source\buildConfig\
+* build\generated\source\buildConfig\androidTest\
+* build\generated\source\buildConfig\androidTest\debug\
+* build\generated\source\buildConfig\androidTest\debug\com\
+* build\generated\source\buildConfig\androidTest\debug\com\linj\
+* build\generated\source\buildConfig\androidTest\debug\com\linj\cameralibrary\
+* build\generated\source\buildConfig\androidTest\debug\com\linj\cameralibrary\test\
+* build\generated\source\buildConfig\androidTest\debug\com\linj\cameralibrary\test\BuildConfig.java
+* build\generated\source\buildConfig\debug\
+* build\generated\source\buildConfig\debug\com\
+* build\generated\source\buildConfig\debug\com\linj\
+* build\generated\source\buildConfig\debug\com\linj\cameralibrary\
+* build\generated\source\buildConfig\debug\com\linj\cameralibrary\BuildConfig.java
+* build\generated\source\r\
+* build\generated\source\r\androidTest\
+* build\generated\source\r\androidTest\debug\
+* build\generated\source\r\androidTest\debug\com\
+* build\generated\source\r\androidTest\debug\com\linj\
+* build\generated\source\r\androidTest\debug\com\linj\cameralibrary\
+* build\generated\source\r\androidTest\debug\com\linj\cameralibrary\R.java
+* build\generated\source\r\androidTest\debug\com\linj\cameralibrary\test\
+* build\generated\source\r\androidTest\debug\com\linj\cameralibrary\test\R.java
+* build\generated\source\r\debug\
+* build\generated\source\r\debug\com\
+* build\generated\source\r\debug\com\linj\
+* build\generated\source\r\debug\com\linj\cameralibrary\
+* build\generated\source\r\debug\com\linj\cameralibrary\R.java
+* build\intermediates\
+* build\intermediates\bundles\
+* build\intermediates\bundles\debug\
+* build\intermediates\bundles\debug\AndroidManifest.xml
+* build\intermediates\bundles\debug\R.txt
+* build\intermediates\bundles\debug\aapt\
+* build\intermediates\bundles\debug\aapt\AndroidManifest.xml
+* build\intermediates\bundles\debug\classes.jar
+* build\intermediates\bundles\debug\libs\
+* build\intermediates\bundles\debug\libs\android-support-v4.jar
+* build\intermediates\bundles\debug\res\
+* build\intermediates\bundles\debug\res\anim\
+* build\intermediates\bundles\debug\res\anim\focusview_show.xml
+* build\intermediates\bundles\debug\res\anim\tempview_show.xml
+* build\intermediates\bundles\debug\res\drawable-hdpi\
+* build\intermediates\bundles\debug\res\drawable-hdpi\albumset_preselected.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\albumset_selected.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\focus_focus_failed.9.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\focus_focused.9.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\focus_focusing.9.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\gg_ic_video_play.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\gg_ic_video_play_on.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\ic_error.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\ic_stub.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\icon_rec.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\progressbar_thumb_record_mix.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\thumb_guide_tips_new.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\video_detail_player_pause.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\video_detail_player_start.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\video_pause_bg.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\video_player_bg.png
+* build\intermediates\bundles\debug\res\drawable-mdpi\
+* build\intermediates\bundles\debug\res\drawable-mdpi\ic_launcher.png
+* build\intermediates\bundles\debug\res\drawable-xhdpi\
+* build\intermediates\bundles\debug\res\drawable-xhdpi\ic_launcher.png
+* build\intermediates\bundles\debug\res\drawable-xxhdpi\
+* build\intermediates\bundles\debug\res\drawable-xxhdpi\ic_launcher.png
+* build\intermediates\bundles\debug\res\drawable\
+* build\intermediates\bundles\debug\res\drawable\btn_play_vedio.xml
+* build\intermediates\bundles\debug\res\drawable\btn_play_vedio_b.xml
+* build\intermediates\bundles\debug\res\drawable\picture_setting_album_checkbox.xml
+* build\intermediates\bundles\debug\res\drawable\progressbar_bg.xml
+* build\intermediates\bundles\debug\res\layout-port\
+* build\intermediates\bundles\debug\res\layout-port\cameracontainer.xml
+* build\intermediates\bundles\debug\res\layout-port\item_album_grid.xml
+* build\intermediates\bundles\debug\res\layout-port\item_album_pager.xml
+* build\intermediates\bundles\debug\res\layout-port\video_bottom_bar.xml
+* build\intermediates\bundles\debug\res\layout\
+* build\intermediates\bundles\debug\res\layout\activity_main.xml
+* build\intermediates\bundles\debug\res\menu\
+* build\intermediates\bundles\debug\res\menu\main.xml
+* build\intermediates\bundles\debug\res\values-sw720dp-land\
+* build\intermediates\bundles\debug\res\values-sw720dp-land\values-sw720dp-land.xml
+* build\intermediates\bundles\debug\res\values-v11\
+* build\intermediates\bundles\debug\res\values-v11\values-v11.xml
+* build\intermediates\bundles\debug\res\values-v14\
+* build\intermediates\bundles\debug\res\values-v14\values-v14.xml
+* build\intermediates\bundles\debug\res\values\
+* build\intermediates\bundles\debug\res\values\values.xml
+* build\intermediates\classes\
+* build\intermediates\classes\debug\
+* build\intermediates\classes\debug\com\
+* build\intermediates\classes\debug\com\linj\
+* build\intermediates\classes\debug\com\linj\FileOperateUtil$1.class
+* build\intermediates\classes\debug\com\linj\FileOperateUtil$2.class
+* build\intermediates\classes\debug\com\linj\FileOperateUtil.class
+* build\intermediates\classes\debug\com\linj\album\
+* build\intermediates\classes\debug\com\linj\album\view\
+* build\intermediates\classes\debug\com\linj\album\view\AlbumGridView$AlbumViewAdapter.class
+* build\intermediates\classes\debug\com\linj\album\view\AlbumGridView$OnCheckedChangeListener.class
+* build\intermediates\classes\debug\com\linj\album\view\AlbumGridView.class
+* build\intermediates\classes\debug\com\linj\album\view\AlbumViewPager$OnPlayVideoListener.class
+* build\intermediates\classes\debug\com\linj\album\view\AlbumViewPager$ViewPagerAdapter$1.class
+* build\intermediates\classes\debug\com\linj\album\view\AlbumViewPager$ViewPagerAdapter.class
+* build\intermediates\classes\debug\com\linj\album\view\AlbumViewPager.class
+* build\intermediates\classes\debug\com\linj\album\view\FilterImageView.class
+* build\intermediates\classes\debug\com\linj\album\view\MatrixImageView$1.class
+* build\intermediates\classes\debug\com\linj\album\view\MatrixImageView$GestureListener.class
+* build\intermediates\classes\debug\com\linj\album\view\MatrixImageView$MatrixTouchListener.class
+* build\intermediates\classes\debug\com\linj\album\view\MatrixImageView$OnMovingListener.class
+* build\intermediates\classes\debug\com\linj\album\view\MatrixImageView$OnSingleTapListener.class
+* build\intermediates\classes\debug\com\linj\album\view\MatrixImageView.class
+* build\intermediates\classes\debug\com\linj\album\view\ThumbnaiImageView$ViewHolder.class
+* build\intermediates\classes\debug\com\linj\album\view\ThumbnaiImageView.class
+* build\intermediates\classes\debug\com\linj\camera\
+* build\intermediates\classes\debug\com\linj\camera\view\
+* build\intermediates\classes\debug\com\linj\camera\view\CameraContainer$1.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraContainer$2$1.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraContainer$2.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraContainer$3.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraContainer$4.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraContainer$DataHandler.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraContainer$TakePictureListener.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraContainer$TouchListener$1.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraContainer$TouchListener.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraContainer.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraOperation.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraView$1.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraView$2.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraView$3.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraView$FlashMode.class
+* build\intermediates\classes\debug\com\linj\camera\view\CameraView.class
+* build\intermediates\classes\debug\com\linj\camera\view\FocusImageView$1.class
+* build\intermediates\classes\debug\com\linj\camera\view\FocusImageView$2.class
+* build\intermediates\classes\debug\com\linj\camera\view\FocusImageView$3.class
+* build\intermediates\classes\debug\com\linj\camera\view\FocusImageView.class
+* build\intermediates\classes\debug\com\linj\camera\view\TempImageView.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\
+* build\intermediates\classes\debug\com\linj\cameralibrary\BuildConfig.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$anim.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$attr.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$color.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$dimen.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$drawable.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$id.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$layout.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$menu.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$string.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$style.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R$styleable.class
+* build\intermediates\classes\debug\com\linj\cameralibrary\R.class
+* build\intermediates\classes\debug\com\linj\imageloader\
+* build\intermediates\classes\debug\com\linj\imageloader\DisplayImageOptions$1.class
+* build\intermediates\classes\debug\com\linj\imageloader\DisplayImageOptions$Builder.class
+* build\intermediates\classes\debug\com\linj\imageloader\DisplayImageOptions.class
+* build\intermediates\classes\debug\com\linj\imageloader\DownloadImgUtils.class
+* build\intermediates\classes\debug\com\linj\imageloader\ImageLoader$1.class
+* build\intermediates\classes\debug\com\linj\imageloader\ImageLoader$2.class
+* build\intermediates\classes\debug\com\linj\imageloader\ImageLoader$3.class
+* build\intermediates\classes\debug\com\linj\imageloader\ImageLoader$4.class
+* build\intermediates\classes\debug\com\linj\imageloader\ImageLoader$ImgBeanHolder.class
+* build\intermediates\classes\debug\com\linj\imageloader\ImageLoader$Type.class
+* build\intermediates\classes\debug\com\linj\imageloader\ImageLoader.class
+* build\intermediates\classes\debug\com\linj\imageloader\ImageSizeUtil$ImageSize.class
+* build\intermediates\classes\debug\com\linj\imageloader\ImageSizeUtil.class
+* build\intermediates\classes\debug\com\linj\imageloader\displayer\
+* build\intermediates\classes\debug\com\linj\imageloader\displayer\BitmapDisplayer.class
+* build\intermediates\classes\debug\com\linj\imageloader\displayer\MatrixBitmapDisplayer.class
+* build\intermediates\classes\debug\com\linj\imageloader\displayer\RoundedBitmapDisplayer$RoundedDrawable.class
+* build\intermediates\classes\debug\com\linj\imageloader\displayer\RoundedBitmapDisplayer.class
+* build\intermediates\classes\debug\com\linj\video\
+* build\intermediates\classes\debug\com\linj\video\view\
+* build\intermediates\classes\debug\com\linj\video\view\VideoPlayerContainer$1.class
+* build\intermediates\classes\debug\com\linj\video\view\VideoPlayerContainer$2.class
+* build\intermediates\classes\debug\com\linj\video\view\VideoPlayerContainer.class
+* build\intermediates\classes\debug\com\linj\video\view\VideoPlayerOperation.class
+* build\intermediates\classes\debug\com\linj\video\view\VideoPlayerView$1.class
+* build\intermediates\classes\debug\com\linj\video\view\VideoPlayerView$PlayerListener.class
+* build\intermediates\classes\debug\com\linj\video\view\VideoPlayerView.class
+* build\intermediates\incremental\
+* build\intermediates\incremental\aidl\
+* build\intermediates\incremental\aidl\androidTest\
+* build\intermediates\incremental\aidl\androidTest\debug\
+* build\intermediates\incremental\aidl\androidTest\debug\dependency.store
+* build\intermediates\incremental\aidl\debug\
+* build\intermediates\incremental\aidl\debug\dependency.store
+* build\intermediates\incremental\mergeAssets\
+* build\intermediates\incremental\mergeAssets\androidTest\
+* build\intermediates\incremental\mergeAssets\androidTest\debug\
+* build\intermediates\incremental\mergeAssets\androidTest\debug\merger.xml
+* build\intermediates\incremental\mergeAssets\debug\
+* build\intermediates\incremental\mergeAssets\debug\merger.xml
+* build\intermediates\incremental\mergeResources\
+* build\intermediates\incremental\mergeResources\androidTest\
+* build\intermediates\incremental\mergeResources\androidTest\debug\
+* build\intermediates\incremental\mergeResources\androidTest\debug\merger.xml
+* build\intermediates\incremental\packageResources\
+* build\intermediates\incremental\packageResources\debug\
+* build\intermediates\incremental\packageResources\debug\merger.xml
+* build\intermediates\manifests\
+* build\intermediates\manifests\androidTest\
+* build\intermediates\manifests\androidTest\debug\
+* build\intermediates\manifests\androidTest\debug\AndroidManifest.xml
+* build\intermediates\manifests\tmp\
+* build\intermediates\manifests\tmp\manifestMerger7300181297647676610.xml
+* build\intermediates\res\
+* build\intermediates\res\androidTest\
+* build\intermediates\res\androidTest\debug\
+* build\intermediates\res\androidTest\debug\anim\
+* build\intermediates\res\androidTest\debug\anim\focusview_show.xml
+* build\intermediates\res\androidTest\debug\anim\tempview_show.xml
+* build\intermediates\res\androidTest\debug\drawable-hdpi\
+* build\intermediates\res\androidTest\debug\drawable-hdpi\albumset_preselected.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\albumset_selected.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\focus_focus_failed.9.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\focus_focused.9.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\focus_focusing.9.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\gg_ic_video_play.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\gg_ic_video_play_on.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\ic_error.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\ic_stub.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\icon_rec.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\progressbar_thumb_record_mix.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\thumb_guide_tips_new.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\video_detail_player_pause.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\video_detail_player_start.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\video_pause_bg.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\video_player_bg.png
+* build\intermediates\res\androidTest\debug\drawable-mdpi\
+* build\intermediates\res\androidTest\debug\drawable-mdpi\ic_launcher.png
+* build\intermediates\res\androidTest\debug\drawable-xhdpi\
+* build\intermediates\res\androidTest\debug\drawable-xhdpi\ic_launcher.png
+* build\intermediates\res\androidTest\debug\drawable-xxhdpi\
+* build\intermediates\res\androidTest\debug\drawable-xxhdpi\ic_launcher.png
+* build\intermediates\res\androidTest\debug\drawable\
+* build\intermediates\res\androidTest\debug\drawable\btn_play_vedio.xml
+* build\intermediates\res\androidTest\debug\drawable\btn_play_vedio_b.xml
+* build\intermediates\res\androidTest\debug\drawable\picture_setting_album_checkbox.xml
+* build\intermediates\res\androidTest\debug\drawable\progressbar_bg.xml
+* build\intermediates\res\androidTest\debug\layout-port\
+* build\intermediates\res\androidTest\debug\layout-port\cameracontainer.xml
+* build\intermediates\res\androidTest\debug\layout-port\item_album_grid.xml
+* build\intermediates\res\androidTest\debug\layout-port\item_album_pager.xml
+* build\intermediates\res\androidTest\debug\layout-port\video_bottom_bar.xml
+* build\intermediates\res\androidTest\debug\layout\
+* build\intermediates\res\androidTest\debug\layout\activity_main.xml
+* build\intermediates\res\androidTest\debug\menu\
+* build\intermediates\res\androidTest\debug\menu\main.xml
+* build\intermediates\res\androidTest\debug\values-sw720dp-land\
+* build\intermediates\res\androidTest\debug\values-sw720dp-land\values-sw720dp-land.xml
+* build\intermediates\res\androidTest\debug\values-v11\
+* build\intermediates\res\androidTest\debug\values-v11\values-v11.xml
+* build\intermediates\res\androidTest\debug\values-v14\
+* build\intermediates\res\androidTest\debug\values-v14\values-v14.xml
+* build\intermediates\res\androidTest\debug\values\
+* build\intermediates\res\androidTest\debug\values\values.xml
+* build\intermediates\resources\
+* build\intermediates\resources\resources-debug-androidTest.ap_
+* build\intermediates\symbols\
+* build\intermediates\symbols\androidTest\
+* build\intermediates\symbols\androidTest\debug\
+* build\intermediates\symbols\androidTest\debug\R.txt
+* build\outputs\
+* build\outputs\aar\
+* build\outputs\aar\CameraLibrary-debug.aar
+* build\tmp\
+* build\tmp\packageDebugJar\
+* build\tmp\packageDebugJar\MANIFEST.MF
+* ic_launcher-web.png
+* proguard-project.txt
+From Refreshlibrary:
+* LICENSE
+* Refreshlibrary.iml
+* build.gradle
+* build\
+* build\generated\
+* build\generated\source\
+* build\generated\source\buildConfig\
+* build\generated\source\buildConfig\androidTest\
+* build\generated\source\buildConfig\androidTest\debug\
+* build\generated\source\buildConfig\androidTest\debug\com\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\library\test\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\library\test\BuildConfig.java
+* build\generated\source\buildConfig\debug\
+* build\generated\source\buildConfig\debug\com\
+* build\generated\source\buildConfig\debug\com\handmark\
+* build\generated\source\buildConfig\debug\com\handmark\pulltorefresh\
+* build\generated\source\buildConfig\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\buildConfig\debug\com\handmark\pulltorefresh\library\BuildConfig.java
+* build\generated\source\r\
+* build\generated\source\r\androidTest\
+* build\generated\source\r\androidTest\debug\
+* build\generated\source\r\androidTest\debug\com\
+* build\generated\source\r\androidTest\debug\com\handmark\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\R.java
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\test\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\test\R.java
+* build\generated\source\r\debug\
+* build\generated\source\r\debug\com\
+* build\generated\source\r\debug\com\handmark\
+* build\generated\source\r\debug\com\handmark\pulltorefresh\
+* build\generated\source\r\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\r\debug\com\handmark\pulltorefresh\library\R.java
+* build\intermediates\
+* build\intermediates\bundles\
+* build\intermediates\bundles\debug\
+* build\intermediates\bundles\debug\AndroidManifest.xml
+* build\intermediates\bundles\debug\R.txt
+* build\intermediates\bundles\debug\aapt\
+* build\intermediates\bundles\debug\aapt\AndroidManifest.xml
+* build\intermediates\bundles\debug\classes.jar
+* build\intermediates\bundles\debug\res\
+* build\intermediates\bundles\debug\res\anim\
+* build\intermediates\bundles\debug\res\anim\slide_in_from_bottom.xml
+* build\intermediates\bundles\debug\res\anim\slide_in_from_top.xml
+* build\intermediates\bundles\debug\res\anim\slide_out_to_bottom.xml
+* build\intermediates\bundles\debug\res\anim\slide_out_to_top.xml
+* build\intermediates\bundles\debug\res\drawable-hdpi\
+* build\intermediates\bundles\debug\res\drawable-hdpi\default_ptr_flip.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\default_ptr_rotate.png
+* build\intermediates\bundles\debug\res\drawable-hdpi\indicator_arrow.png
+* build\intermediates\bundles\debug\res\drawable-mdpi\
+* build\intermediates\bundles\debug\res\drawable-mdpi\default_ptr_flip.png
+* build\intermediates\bundles\debug\res\drawable-mdpi\default_ptr_rotate.png
+* build\intermediates\bundles\debug\res\drawable-mdpi\indicator_arrow.png
+* build\intermediates\bundles\debug\res\drawable-xhdpi\
+* build\intermediates\bundles\debug\res\drawable-xhdpi\default_ptr_flip.png
+* build\intermediates\bundles\debug\res\drawable-xhdpi\default_ptr_rotate.png
+* build\intermediates\bundles\debug\res\drawable-xhdpi\indicator_arrow.png
+* build\intermediates\bundles\debug\res\drawable\
+* build\intermediates\bundles\debug\res\drawable\indicator_bg_bottom.xml
+* build\intermediates\bundles\debug\res\drawable\indicator_bg_top.xml
+* build\intermediates\bundles\debug\res\layout\
+* build\intermediates\bundles\debug\res\layout\pull_to_refresh_header_horizontal.xml
+* build\intermediates\bundles\debug\res\layout\pull_to_refresh_header_vertical.xml
+* build\intermediates\bundles\debug\res\values-zh\
+* build\intermediates\bundles\debug\res\values-zh\values-zh.xml
+* build\intermediates\bundles\debug\res\values\
+* build\intermediates\bundles\debug\res\values\values.xml
+* build\intermediates\classes\
+* build\intermediates\classes\debug\
+* build\intermediates\classes\debug\com\
+* build\intermediates\classes\debug\com\handmark\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\BuildConfig.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\ILoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\IPullToRefresh.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\LoadingLayoutProxy.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\OverscrollHelper$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\OverscrollHelper.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$3.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$4.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$AnimationStyle.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$Mode.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnLastItemVisibleListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnPullEventListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnRefreshListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnRefreshListener2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnSmoothScrollFinishedListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$Orientation.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$SmoothScrollRunnable.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$State.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView$InternalExpandableListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView$InternalExpandableListViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshGridView$InternalGridView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshGridView$InternalGridViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshGridView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView$InternalHorizontalScrollViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView$InternalListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView$InternalListViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshScrollView$InternalScrollViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshScrollView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView$2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView$InternalWebViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$anim.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$attr.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$dimen.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$drawable.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$id.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$layout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$string.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$styleable.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2$JsValueCallback.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\SoundPullEventListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\EmptyViewMethodAccessor.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\IndicatorLayout$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\IndicatorLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\LoadingLayout$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\LoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\RotateLoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\Utils.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\ViewCompat$SDK11.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\ViewCompat$SDK16.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\ViewCompat.class
+* build\intermediates\incremental\
+* build\intermediates\incremental\aidl\
+* build\intermediates\incremental\aidl\androidTest\
+* build\intermediates\incremental\aidl\androidTest\debug\
+* build\intermediates\incremental\aidl\androidTest\debug\dependency.store
+* build\intermediates\incremental\aidl\debug\
+* build\intermediates\incremental\aidl\debug\dependency.store
+* build\intermediates\incremental\mergeAssets\
+* build\intermediates\incremental\mergeAssets\androidTest\
+* build\intermediates\incremental\mergeAssets\androidTest\debug\
+* build\intermediates\incremental\mergeAssets\androidTest\debug\merger.xml
+* build\intermediates\incremental\mergeAssets\debug\
+* build\intermediates\incremental\mergeAssets\debug\merger.xml
+* build\intermediates\incremental\mergeResources\
+* build\intermediates\incremental\mergeResources\androidTest\
+* build\intermediates\incremental\mergeResources\androidTest\debug\
+* build\intermediates\incremental\mergeResources\androidTest\debug\merger.xml
+* build\intermediates\incremental\packageResources\
+* build\intermediates\incremental\packageResources\debug\
+* build\intermediates\incremental\packageResources\debug\merger.xml
+* build\intermediates\manifests\
+* build\intermediates\manifests\androidTest\
+* build\intermediates\manifests\androidTest\debug\
+* build\intermediates\manifests\androidTest\debug\AndroidManifest.xml
+* build\intermediates\manifests\tmp\
+* build\intermediates\manifests\tmp\manifestMerger8284410954918841958.xml
+* build\intermediates\res\
+* build\intermediates\res\androidTest\
+* build\intermediates\res\androidTest\debug\
+* build\intermediates\res\androidTest\debug\anim\
+* build\intermediates\res\androidTest\debug\anim\slide_in_from_bottom.xml
+* build\intermediates\res\androidTest\debug\anim\slide_in_from_top.xml
+* build\intermediates\res\androidTest\debug\anim\slide_out_to_bottom.xml
+* build\intermediates\res\androidTest\debug\anim\slide_out_to_top.xml
+* build\intermediates\res\androidTest\debug\drawable-hdpi\
+* build\intermediates\res\androidTest\debug\drawable-hdpi\default_ptr_flip.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\default_ptr_rotate.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi\indicator_arrow.png
+* build\intermediates\res\androidTest\debug\drawable-mdpi\
+* build\intermediates\res\androidTest\debug\drawable-mdpi\default_ptr_flip.png
+* build\intermediates\res\androidTest\debug\drawable-mdpi\default_ptr_rotate.png
+* build\intermediates\res\androidTest\debug\drawable-mdpi\indicator_arrow.png
+* build\intermediates\res\androidTest\debug\drawable-xhdpi\
+* build\intermediates\res\androidTest\debug\drawable-xhdpi\default_ptr_flip.png
+* build\intermediates\res\androidTest\debug\drawable-xhdpi\default_ptr_rotate.png
+* build\intermediates\res\androidTest\debug\drawable-xhdpi\indicator_arrow.png
+* build\intermediates\res\androidTest\debug\drawable\
+* build\intermediates\res\androidTest\debug\drawable\indicator_bg_bottom.xml
+* build\intermediates\res\androidTest\debug\drawable\indicator_bg_top.xml
+* build\intermediates\res\androidTest\debug\layout\
+* build\intermediates\res\androidTest\debug\layout\pull_to_refresh_header_horizontal.xml
+* build\intermediates\res\androidTest\debug\layout\pull_to_refresh_header_vertical.xml
+* build\intermediates\res\androidTest\debug\values-zh\
+* build\intermediates\res\androidTest\debug\values-zh\values-zh.xml
+* build\intermediates\res\androidTest\debug\values\
+* build\intermediates\res\androidTest\debug\values\values.xml
+* build\intermediates\resources\
+* build\intermediates\resources\resources-debug-androidTest.ap_
+* build\intermediates\symbols\
+* build\intermediates\symbols\androidTest\
+* build\intermediates\symbols\androidTest\debug\
+* build\intermediates\symbols\androidTest\debug\R.txt
+* build\outputs\
+* build\outputs\aar\
+* build\outputs\aar\Refreshlibrary-debug.aar
+* build\tmp\
+* build\tmp\packageDebugJar\
+* build\tmp\packageDebugJar\MANIFEST.MF
+* pom.xml
+From joybar:
+* ic_launcher-web.png
+* proguard-project.txt
+From xUtilLibrary:
+* build.gradle
+* build\
+* build\generated\
+* build\generated\source\
+* build\generated\source\buildConfig\
+* build\generated\source\buildConfig\androidTest\
+* build\generated\source\buildConfig\androidTest\debug\
+* build\generated\source\buildConfig\androidTest\debug\com\
+* build\generated\source\buildConfig\androidTest\debug\com\lidroid\
+* build\generated\source\buildConfig\androidTest\debug\com\lidroid\xutils\
+* build\generated\source\buildConfig\androidTest\debug\com\lidroid\xutils\test\
+* build\generated\source\buildConfig\androidTest\debug\com\lidroid\xutils\test\BuildConfig.java
+* build\generated\source\buildConfig\debug\
+* build\generated\source\buildConfig\debug\com\
+* build\generated\source\buildConfig\debug\com\lidroid\
+* build\generated\source\buildConfig\debug\com\lidroid\xutils\
+* build\generated\source\buildConfig\debug\com\lidroid\xutils\BuildConfig.java
+* build\intermediates\
+* build\intermediates\bundles\
+* build\intermediates\bundles\debug\
+* build\intermediates\bundles\debug\AndroidManifest.xml
+* build\intermediates\bundles\debug\aapt\
+* build\intermediates\bundles\debug\aapt\AndroidManifest.xml
+* build\intermediates\bundles\debug\classes.jar
+* build\intermediates\classes\
+* build\intermediates\classes\debug\
+* build\intermediates\classes\debug\com\
+* build\intermediates\classes\debug\com\lidroid\
+* build\intermediates\classes\debug\com\lidroid\xutils\
+* build\intermediates\classes\debug\com\lidroid\xutils\BitmapUtils$BitmapLoadTask.class
+* build\intermediates\classes\debug\com\lidroid\xutils\BitmapUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\BuildConfig.class
+* build\intermediates\classes\debug\com\lidroid\xutils\DbUtils$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\DbUtils$DaoConfig.class
+* build\intermediates\classes\debug\com\lidroid\xutils\DbUtils$DbUpgradeListener.class
+* build\intermediates\classes\debug\com\lidroid\xutils\DbUtils$FindTempCache.class
+* build\intermediates\classes\debug\com\lidroid\xutils\DbUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\HttpUtils$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\HttpUtils$2.class
+* build\intermediates\classes\debug\com\lidroid\xutils\HttpUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\ViewUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\BitmapCacheListener.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\BitmapCommonUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\BitmapDisplayConfig.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\BitmapGlobalConfig$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\BitmapGlobalConfig$BitmapCacheManagementTask.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\BitmapGlobalConfig.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\PauseOnScrollListener.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\callback\
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\callback\BitmapLoadCallBack.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\callback\BitmapLoadFrom.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\callback\BitmapSetter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\callback\DefaultBitmapLoadCallBack.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\core\
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\core\AsyncDrawable.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\core\BitmapCache$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\core\BitmapCache$BitmapMeta.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\core\BitmapCache$MemoryCacheKey.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\core\BitmapCache.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\core\BitmapDecoder.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\core\BitmapSize.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\download\
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\download\DefaultDownloader.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\download\Downloader.class
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\factory\
+* build\intermediates\classes\debug\com\lidroid\xutils\bitmap\factory\BitmapFactory.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\FileNameGenerator.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\KeyExpiryMap.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\LruDiskCache$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\LruDiskCache$2.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\LruDiskCache$Editor$FaultHidingOutputStream.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\LruDiskCache$Editor.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\LruDiskCache$Entry.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\LruDiskCache$Snapshot.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\LruDiskCache$StrictLineReader$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\LruDiskCache$StrictLineReader.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\LruDiskCache.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\LruMemoryCache.class
+* build\intermediates\classes\debug\com\lidroid\xutils\cache\MD5FileNameGenerator.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\Check.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\Column.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\Finder.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\Foreign.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\Id.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\NoAutoIncrement.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\NotNull.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\Table.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\Transient.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\annotation\Unique.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\BooleanColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\ByteArrayColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\ByteColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\CharColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\ColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\ColumnConverterFactory.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\DateColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\DoubleColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\FloatColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\IntegerColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\LongColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\ShortColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\SqlDateColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\converter\StringColumnConverter.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\ColumnDbType.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\CursorUtils$EntityTempCache.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\CursorUtils$FindCacheSequence.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\CursorUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\DbModelSelector.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\FinderLazyLoader.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\ForeignLazyLoader.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\Selector$OrderBy.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\Selector.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\SqlInfo.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\SqlInfoBuilder.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\sqlite\WhereBuilder.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\table\
+* build\intermediates\classes\debug\com\lidroid\xutils\db\table\Column.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\table\ColumnUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\table\DbModel.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\table\Finder.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\table\Foreign.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\table\Id.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\table\KeyValue.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\table\Table.class
+* build\intermediates\classes\debug\com\lidroid\xutils\db\table\TableUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\exception\
+* build\intermediates\classes\debug\com\lidroid\xutils\exception\BaseException.class
+* build\intermediates\classes\debug\com\lidroid\xutils\exception\DbException.class
+* build\intermediates\classes\debug\com\lidroid\xutils\exception\HttpException.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\
+* build\intermediates\classes\debug\com\lidroid\xutils\http\HttpCache$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\HttpCache.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\HttpHandler$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\HttpHandler$NotUseApacheRedirectHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\HttpHandler$State.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\HttpHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\RequestParams$HeaderItem.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\RequestParams.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\ResponseInfo.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\ResponseStream.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\SyncHttpHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\callback\
+* build\intermediates\classes\debug\com\lidroid\xutils\http\callback\DefaultHttpRedirectHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\callback\FileDownloadHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\callback\HttpRedirectHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\callback\RequestCallBack.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\callback\RequestCallBackHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\callback\StringDownloadHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\DefaultSSLSocketFactory$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\DefaultSSLSocketFactory.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\HttpRequest$HttpMethod.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\HttpRequest.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\RetryHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\entity\
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\entity\BodyParamsEntity.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\entity\DecompressingEntity.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\entity\FileUploadEntity.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\entity\GZipDecompressingEntity.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\entity\InputStreamUploadEntity.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\entity\UploadEntity.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\FormBodyPart.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\HttpMultipart$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\HttpMultipart.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\HttpMultipartMode.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\MIME.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\MinimalField.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\MinimalFieldHeader.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\MultipartEntity$CallBackInfo.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\MultipartEntity.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\content\
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\content\AbstractContentBody.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\content\ByteArrayBody.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\content\ContentBody.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\content\ContentDescriptor.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\content\FileBody.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\content\InputStreamBody.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\multipart\content\StringBody.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\util\
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\util\URIBuilder.class
+* build\intermediates\classes\debug\com\lidroid\xutils\http\client\util\URLEncodedUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\
+* build\intermediates\classes\debug\com\lidroid\xutils\task\Node.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\Priority.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityAsyncTask$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityAsyncTask$2.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityAsyncTask$AsyncTaskResult.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityAsyncTask$InternalHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityAsyncTask$WorkerRunnable.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityAsyncTask.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityExecutor$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityExecutor.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityObject.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityObjectBlockingQueue$Itr.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityObjectBlockingQueue.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\PriorityRunnable.class
+* build\intermediates\classes\debug\com\lidroid\xutils\task\TaskHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\util\
+* build\intermediates\classes\debug\com\lidroid\xutils\util\CharsetUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\util\DoubleKeyValueMap.class
+* build\intermediates\classes\debug\com\lidroid\xutils\util\IOUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\util\LogUtils$CustomLogger.class
+* build\intermediates\classes\debug\com\lidroid\xutils\util\LogUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\util\MimeTypeUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\util\OtherUtils$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\util\OtherUtils.class
+* build\intermediates\classes\debug\com\lidroid\xutils\util\PreferencesCookieStore$SerializableCookie.class
+* build\intermediates\classes\debug\com\lidroid\xutils\util\PreferencesCookieStore.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\
+* build\intermediates\classes\debug\com\lidroid\xutils\view\EventListenerManager$DynamicHandler.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\EventListenerManager.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\ResLoader$1.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\ResLoader.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\ResType.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\ViewFinder.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\ViewInjectInfo.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\ContentView.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\PreferenceInject.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\ResInject.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\ViewInject.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\EventBase.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnChildClick.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnClick.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnCompoundButtonCheckedChange.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnFocusChange.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnGroupClick.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnGroupCollapse.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnGroupExpand.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnItemClick.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnItemLongClick.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnItemSelected.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnKey.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnLongClick.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnNothingSelected.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnPreferenceChange.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnPreferenceClick.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnProgressChanged.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnRadioGroupCheckedChange.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnScroll.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnScrollStateChanged.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnStartTrackingTouch.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnStopTrackingTouch.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnTabChange.class
+* build\intermediates\classes\debug\com\lidroid\xutils\view\annotation\event\OnTouch.class
+* build\intermediates\incremental\
+* build\intermediates\incremental\aidl\
+* build\intermediates\incremental\aidl\androidTest\
+* build\intermediates\incremental\aidl\androidTest\debug\
+* build\intermediates\incremental\aidl\androidTest\debug\dependency.store
+* build\intermediates\incremental\aidl\debug\
+* build\intermediates\incremental\aidl\debug\dependency.store
+* build\intermediates\incremental\mergeAssets\
+* build\intermediates\incremental\mergeAssets\androidTest\
+* build\intermediates\incremental\mergeAssets\androidTest\debug\
+* build\intermediates\incremental\mergeAssets\androidTest\debug\merger.xml
+* build\intermediates\incremental\mergeAssets\debug\
+* build\intermediates\incremental\mergeAssets\debug\merger.xml
+* build\intermediates\incremental\mergeResources\
+* build\intermediates\incremental\mergeResources\androidTest\
+* build\intermediates\incremental\mergeResources\androidTest\debug\
+* build\intermediates\incremental\mergeResources\androidTest\debug\merger.xml
+* build\intermediates\incremental\packageResources\
+* build\intermediates\incremental\packageResources\debug\
+* build\intermediates\incremental\packageResources\debug\merger.xml
+* build\intermediates\manifests\
+* build\intermediates\manifests\androidTest\
+* build\intermediates\manifests\androidTest\debug\
+* build\intermediates\manifests\androidTest\debug\AndroidManifest.xml
+* build\intermediates\manifests\tmp\
+* build\intermediates\manifests\tmp\manifestMerger5020344767896712708.xml
+* build\intermediates\resources\
+* build\intermediates\resources\resources-debug-androidTest.ap_
+* build\outputs\
+* build\outputs\aar\
+* build\outputs\aar\xUtillibrary-debug.aar
+* build\tmp\
+* build\tmp\packageDebugJar\
+* build\tmp\packageDebugJar\MANIFEST.MF
+* xUtillibrary.iml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In CameraLibrary:
+* AndroidManifest.xml => cameraLibrary\src\main\AndroidManifest.xml
+* assets\ => cameraLibrary\src\main\assets
+* res\ => cameraLibrary\src\main\res\
+* src\ => cameraLibrary\src\main\java\
+In Refreshlibrary:
+* AndroidManifest.xml => refreshlibrary\src\main\AndroidManifest.xml
+* assets\ => refreshlibrary\src\main\assets
+* res\ => refreshlibrary\src\main\res\
+* src\ => refreshlibrary\src\main\java\
+In xUtilLibrary:
+* AndroidManifest.xml => xUtilLibrary\src\main\AndroidManifest.xml
+* assets\ => xUtilLibrary\src\main\assets
+* res\ => xUtilLibrary\src\main\res
+* src\ => xUtilLibrary\src\main\java\
+In joybar:
+* AndroidManifest.xml => joybar\src\main\AndroidManifest.xml
+* assets\ => joybar\src\main\assets\
+* libs\arm64-v8a\libjpush175.so => joybar\src\main\jniLibs\arm64-v8a\libjpush175.so
+* libs\armeabi-v7a\libjpush175.so => joybar\src\main\jniLibs\armeabi-v7a\libjpush175.so
+* libs\armeabi\libjpush175.so => joybar\src\main\jniLibs\armeabi\libjpush175.so
+* libs\commons-codec-1.5.jar => joybar\libs\commons-codec-1.5.jar
+* libs\engine.io-client-0.4.1.jar => joybar\libs\engine.io-client-0.4.1.jar
+* libs\guice-3.0-no_aop.jar => joybar\libs\guice-3.0-no_aop.jar
+* libs\httpmime-4.1.3.jar => joybar\libs\httpmime-4.1.3.jar
+* libs\Java-WebSocket-1.3.0.jar => joybar\libs\Java-WebSocket-1.3.0.jar
+* libs\javax.inject-1.jar => joybar\libs\javax.inject-1.jar
+* libs\jpush-sdk-release1.7.5.jar => joybar\libs\jpush-sdk-release1.7.5.jar
+* libs\oss-android-sdk-1.0.0.jar => joybar\libs\oss-android-sdk-1.0.0.jar
+* libs\roboguice-2.0.jar => joybar\libs\roboguice-2.0.jar
+* libs\SocialSDK_actionbarview.jar => joybar\libs\SocialSDK_actionbarview.jar
+* libs\SocialSDK_AtFriends.jar => joybar\libs\SocialSDK_AtFriends.jar
+* libs\SocialSDK_comment.jar => joybar\libs\SocialSDK_comment.jar
+* libs\SocialSDK_UserCenter.jar => joybar\libs\SocialSDK_UserCenter.jar
+* libs\SocialSDK_WeiXin_1.jar => joybar\libs\SocialSDK_WeiXin_1.jar
+* libs\SocialSDK_WeiXin_2.jar => joybar\libs\SocialSDK_WeiXin_2.jar
+* libs\SocialSDK_whatsapp.jar => joybar\libs\SocialSDK_whatsapp.jar
+* libs\socket.io-client-0.4.2.jar => joybar\libs\socket.io-client-0.4.2.jar
+* libs\umeng-analytics-v5.5.3.jar => joybar\libs\umeng-analytics-v5.5.3.jar
+* libs\umeng_social_sdk.jar => joybar\libs\umeng_social_sdk.jar
+* libs\universal-image-loader-1.9.0.jar => joybar\libs\universal-image-loader-1.9.0.jar
+* lint.xml => joybar\lint.xml
+* res\ => joybar\src\main\res\
+* src\ => joybar\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
