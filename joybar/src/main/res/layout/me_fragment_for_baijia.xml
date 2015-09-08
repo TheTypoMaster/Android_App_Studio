@@ -259,7 +259,7 @@
                 android:padding="@dimen/shop_main_width2_dimen" >
 
                 <TextView
-                    android:id="@+id/tv_waiting_for_recieve"
+                    android:id="@+id/tv_waiting_for_receive"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/shop_main_width5_dimen"
@@ -271,7 +271,7 @@
                     android:textSize="13dip" />
 
                 <TextView
-                    android:id="@+id/tv_waiting_for_recieve_count_textview"
+                    android:id="@+id/tv_waiting_for_receive_count_textview"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_alignParentRight="true"

@@ -56,7 +56,7 @@ public class MeFragmentForBaiJia extends BaseFragment implements OnClickListener
 	private TextView tv_fans_title;
 	private TextView tv_all_order;
 	private TextView tv_waiting_for_send;
-	private TextView tv_waiting_for_recieve;
+	private TextView tv_waiting_for_receive;
 	private TextView tv_pick_by_myself;
 	private TextView tv_will_yangjia;//我要养家
 	private TextView tv_my_collection;//我的收藏
@@ -65,7 +65,7 @@ public class MeFragmentForBaiJia extends BaseFragment implements OnClickListener
 	TextView shop_main_praisevalue_textview ;//收藏
 	TextView tv_all_order_count_textview;//总订单数
 	TextView tv_waiting_for_send_count_textview;//待支付订单数
-	TextView tv_waiting_for_recieve_count_textview;//专柜自提订单数
+	TextView tv_waiting_for_receive_count_textview;//专柜自提订单数
 	TextView tv_pick_by_myself_count_textview;//售后订单数
 	LinearLayout me_fragment_for_baijie_layout_fans_linearlayout;//粉丝
 	LinearLayout me_fragment_for_baijie_layout_attention_linearlayout;//关注
@@ -104,13 +104,13 @@ public class MeFragmentForBaiJia extends BaseFragment implements OnClickListener
 		me_fragment_for_baijie_layout_fans_linearlayout.setOnClickListener(this);
 		tv_all_order_count_textview=(TextView)view.findViewById(R.id.tv_all_order_count_textview);
 		tv_waiting_for_send_count_textview=(TextView)view.findViewById(R.id.tv_waiting_for_send_count_textview);
-		tv_waiting_for_recieve_count_textview=(TextView)view.findViewById(R.id.tv_waiting_for_recieve_count_textview);
+		tv_waiting_for_receive_count_textview=(TextView)view.findViewById(R.id.tv_waiting_for_receive_count_textview);
 		tv_pick_by_myself_count_textview=(TextView)view.findViewById(R.id.tv_pick_by_myself_count_textview);
 		
 		
 		LinearLayout me_fragment_for_baijie_layout_mycircle_linearlayout=(LinearLayout)view.findViewById(R.id.me_fragment_for_baijie_layout_mycircle_linearlayout);
 		me_fragment_for_baijie_layout_mycircle_linearlayout.setOnClickListener(this);
-		ToolsUtil.setFontStyle(getActivity(), view, R.id.tv_nickname,R.id.tv_nickname,R.id.shop_main_attentionvalue_textview,R.id.shop_main_attention_textview,R.id.shop_main_fansvalue_textview,R.id.shop_main_fans_textview,R.id.shop_main_praisevalue_textview,R.id.shop_main_praise_textview,R.id.tv_all_order,R.id.tv_waiting_for_send,R.id.tv_waiting_for_recieve,R.id.tv_pick_by_myself,R.id.tv_my_collection,R.id.tv_will_yangjia);
+		ToolsUtil.setFontStyle(getActivity(), view, R.id.tv_nickname,R.id.tv_nickname,R.id.shop_main_attentionvalue_textview,R.id.shop_main_attention_textview,R.id.shop_main_fansvalue_textview,R.id.shop_main_fans_textview,R.id.shop_main_praisevalue_textview,R.id.shop_main_praise_textview,R.id.tv_all_order,R.id.tv_waiting_for_send,R.id.tv_waiting_for_receive,R.id.tv_pick_by_myself,R.id.tv_my_collection,R.id.tv_will_yangjia);
 		iv_setting = (ImageView) view.findViewById(R.id.iv_setting);
 		iv_icon = (ImageView) view.findViewById(R.id.iv_icon);
 		iv_icon.setImageResource(R.drawable.default_pic);
@@ -131,7 +131,7 @@ public class MeFragmentForBaiJia extends BaseFragment implements OnClickListener
 		tv_fans_count = (TextView) view.findViewById(R.id.tv_fans_count);
 		tv_all_order = (TextView) view.findViewById(R.id.tv_all_order);
 		tv_waiting_for_send = (TextView) view.findViewById(R.id.tv_waiting_for_send);
-		tv_waiting_for_recieve = (TextView) view.findViewById(R.id.tv_waiting_for_recieve);
+		tv_waiting_for_receive = (TextView) view.findViewById(R.id.tv_waiting_for_receive);
 		tv_pick_by_myself = (TextView) view.findViewById(R.id.tv_pick_by_myself);
 		tv_my_collection = (TextView) view.findViewById(R.id.tv_my_collection);
 		tv_will_yangjia = (TextView) view.findViewById(R.id.tv_will_yangjia);
@@ -139,13 +139,13 @@ public class MeFragmentForBaiJia extends BaseFragment implements OnClickListener
 		tv_my_collection.setOnClickListener(this);
 		tv_all_order.setOnClickListener(this);
 		tv_waiting_for_send.setOnClickListener(this);
-		tv_waiting_for_recieve.setOnClickListener(this);
+		tv_waiting_for_receive.setOnClickListener(this);
 		tv_pick_by_myself.setOnClickListener(this);
 		tv_will_yangjia.setOnClickListener(this);
 		/*FontManager.changeFonts(getActivity(), tv_nickname, tv_style,tv_attention_count,
 				tv_attention_title,tv_fans_count,tv_fans_title,tv_collection_count,
 				tv_collection_title,tv_all_order,tv_waiting_for_send,
-				tv_waiting_for_recieve,tv_pick_by_myself,tv_will_yangjia,tv_my_collection);*/
+				tv_waiting_for_receive,tv_pick_by_myself,tv_will_yangjia,tv_my_collection);*/
 	}
 
 	@Override
@@ -191,7 +191,7 @@ public class MeFragmentForBaiJia extends BaseFragment implements OnClickListener
 			intent2.putExtra("CURRID", 1);
 			startActivity(intent2);
 			break;
-		case R.id.tv_waiting_for_recieve://专柜自提
+		case R.id.tv_waiting_for_receive://专柜自提
 			Intent intent3=new Intent(getActivity(),BaiJiaOrderListActivity.class);
 			intent3.putExtra("CURRID", 2);
 			startActivity(intent3);
@@ -325,9 +325,9 @@ public class MeFragmentForBaiJia extends BaseFragment implements OnClickListener
 			tv_waiting_for_send_count_textview.setVisibility(View.GONE);
 		}
 		if(0 != myInfoBean.getPickedSelfOrderCount()){
-			tv_waiting_for_recieve_count_textview.setVisibility(View.VISIBLE);
+			tv_waiting_for_receive_count_textview.setVisibility(View.VISIBLE);
 		}else{
-			tv_waiting_for_recieve_count_textview.setVisibility(View.GONE);
+			tv_waiting_for_receive_count_textview.setVisibility(View.GONE);
 		}
 		if(0 != myInfoBean.getAfterSaleOrderCount()){
 			tv_pick_by_myself_count_textview.setVisibility(View.VISIBLE);
@@ -337,7 +337,7 @@ public class MeFragmentForBaiJia extends BaseFragment implements OnClickListener
 		
 		tv_all_order_count_textview.setText(ToolsUtil.setOrderCount(myInfoBean.getAllOrderCount()+""));
 		tv_waiting_for_send_count_textview.setText(ToolsUtil.setOrderCount(myInfoBean.getWaitPaymentOrderCount()+""));
-		tv_waiting_for_recieve_count_textview.setText(ToolsUtil.setOrderCount(myInfoBean.getPickedSelfOrderCount()+""));
+		tv_waiting_for_receive_count_textview.setText(ToolsUtil.setOrderCount(myInfoBean.getPickedSelfOrderCount()+""));
 		tv_pick_by_myself_count_textview.setText(ToolsUtil.setOrderCount(myInfoBean.getAfterSaleOrderCount()+""));
 	}
 	
